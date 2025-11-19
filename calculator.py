@@ -1,29 +1,19 @@
-"""
-calculator.py
-- Defines functions used to create a simple calculator
+#https://github.com/alberto-sclocchi/lab11-AS-MM.git
+# Partner 1: Alberto Sclocchi
+# Partner 2: Matias Mena Gorostiaga
 
-One function per operation, in order.
-"""
 import math
 def add(a, b):
     return a + b
 
 def square_root(a):
-    try:
-        if a < 0:
-            raise ValueError("Cannot take the square root of a negative number")
-
-        return math.sqrt(a)
-    except ValueError as e:
-        print(f"Error: {e}")
-        return None
+    if a < 0:
+         raise ValueError("Cannot take the square root of a negative number")
+    return math.sqrt(a)
 
 def hypotenuse(a,b):
-    try:
-        return math.hypot(a,b)
-    except Exception as e:
-        print(f"Error: {e}")
-        return None
+    return math.hypot(a,b)
+
 
 def subtract(a, b):
     return a - b
@@ -44,6 +34,5 @@ def exponent(a, b):
 def div(a, b):
     if a == 0:
         raise ZeroDivisionError
-    return a / b
-    return b / a # raise ZeroDivisionError if a == 0
+    return b / a
 
