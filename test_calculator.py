@@ -19,11 +19,11 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(subtract(1, 0), 1)
 
     def test_multiply(self): # 3 assertions
-        self.assertEqual(multiply(2, 2), 4)
-        self.assertEqual(multiply(2, -3), -6)
-        self.assertEqual(multiply(2, 0), 0)
-        self.assertEqual(multiply(2, 1), 2)
-        self.assertEqual(multiply(-2, -2), 4)
+        self.assertEqual(mul(2, 2), 4)
+        self.assertEqual(mul(2, -3), -6)
+        self.assertEqual(mul(2, 0), 0)
+        self.assertEqual(mul(2, 1), 2)
+        self.assertEqual(mul(-2, -2), 4)
 
     def test_divide(self): # 3 assertions
         self.assertEqual(div(2, 6), 3)
